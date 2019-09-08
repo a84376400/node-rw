@@ -2,8 +2,6 @@
 
 #### Core Framework
 
-YF-FPM-SERVER github -> [https://github.com/team4yf/yf-fpm-server](https://github.com/team4yf/yf-fpm-server)
-
 #### System layer design
 
 ![](./images/Raiwav-System-Layer-Design.png)
