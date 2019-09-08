@@ -1,0 +1,166 @@
+[{
+  "id": 1,
+  "addr": "0001",
+  "name": "光端机",
+  "length": 1,
+  "rw": 2,
+  "type": "Boolean",
+  "val": 0,
+  "getWriteHex": 0
+},
+
+  {
+    "id": 2,
+    "addr": "0002",
+    "name": "摄像机",
+    "length": 1,
+    "rw": 3,
+    "type": "Boolean",
+    "val": 0,
+    "getWriteHex": 0
+  },
+
+  {
+    "id": 3,
+    "addr": "0003",
+    "name": "加热器",
+    "length": 1,
+    "rw": 3,
+    "type": "Boolean",
+    "val": 0,
+    "getWriteHex": 0
+  },
+
+  {
+    "id": 4,
+    "addr": "0004",
+    "name": "风机",
+    "length": 1,
+    "rw": 3,
+    "type": "Boolean",
+    "val": 0,
+    "getWriteHex": 0
+  },
+
+  {
+    "id": 5,
+    "addr": "0005",
+    "name": "补光灯",
+    "length": 1,
+    "rw": 3,
+    "type": "Boolean",
+    "val": 0,
+    "getWriteHex": 0
+  },
+
+  {
+    "id": 6,
+    "addr": "0006",
+    "name": "12V输出光端机",
+    "length": 1,
+    "rw": 2,
+    "type": "Boolean",
+    "val": 0,
+    "getWriteHex": 0
+  },
+
+  {
+    "id": 7,
+    "addr": "0007",
+    "name": "12V输出照明",
+    "length": 1,
+    "rw": 3,
+    "type": "Boolean",
+    "val": 0,
+    "getWriteHex": 0
+  },
+
+  {
+    "id": 8,
+    "addr": "0008",
+    "name": "保留",
+    "length": 1,
+    "rw": 2,
+    "type": "Boolean",
+    "val": 0,
+    "getWriteHex": 0
+  },
+
+  {
+    "id": 9,
+    "addr": "0009",
+    "name": "保留",
+    "length": 1,
+    "rw": 2,
+    "type": "Boolean",
+    "val": 0,
+    "getWriteHex": 0
+  },
+
+  {
+    "id": 10,
+    "addr": "000a",
+    "name": "保留",
+    "length": 1,
+    "rw": 2,
+    "type": "UInt16",
+    "val": 0,
+    "getWriteHex": 0
+  },
+
+  {
+    "id": 11,
+    "addr": "000b",
+    "name": "防雷器",
+    "length": 1,
+    "rw": 2,
+    "type": "Onoff",
+    "val": 0,
+    "getWriteHex": 0
+  },
+
+  {
+    "id": 12,
+    "addr": "000c",
+    "name": "柜门",
+    "length": 1,
+    "rw": 2,
+    "type": "Boolean",
+    "val": 0,
+    "getWriteHex": 0
+  },
+
+  {
+    "id": 13,
+    "addr": "000d",
+    "name": "温度(℃)",
+    "length": 2,
+    "rw": 2,
+    "type": "Int16",
+    "val": 0,
+    "getWriteHex": 0
+  },
+
+  {
+    "id": 15,
+    "addr": "000f",
+    "name": "电压(V)",
+    "length": 2,
+    "rw": 2,
+    "type": "UInt16",
+    "val": 0,
+    "getWriteHex": 0
+  },
+
+  {
+    "id": 17,
+    "addr": "0011",
+    "name": "电流(mA)",
+    "length": 2,
+    "rw": 2,
+    "type": "UInt16",
+    "val": 0,
+    "getWriteHex": 0
+  }
+]
+

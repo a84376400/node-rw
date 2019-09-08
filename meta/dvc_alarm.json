@@ -1,0 +1,21 @@
+{
+  "name": "dvc_alarm",         
+  "comment": "设备告警信息",
+  "fields": [
+    {
+      "name": "sn",
+      "type": "string",
+      "comment": "设备编号"
+    },
+    {
+      "name": "title",
+      "type": "string",
+      "comment": "告警标题"
+    },
+    {
+      "name": "code",
+      "type": "string",
+      "comment": "告警编码"
+    }
+  ]
+}

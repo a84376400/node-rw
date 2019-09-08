@@ -1,0 +1,43 @@
+{
+  "name": "fpm-rv-iot-server",
+  "private": true,
+  "version": "2.0.2",
+  "description": "Yangzhou Ruiwei IOT Server Project, Powered By [ FPM ]",
+  "main": "app.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha test/*.test.js",
+    "start": "node source/app.js",
+    "dev": "./node_modules/.bin/nodemon source/app.js",
+    "docker": "docker-compose -f docker-compose.dev.yml up --build -d",
+    "hook:staging": "curl -H \"Content-Type:application/json\" -X POST -d {} http://192.168.100.196:9001/webhook/run/scripts/restartapp",
+    "make:win": "./Makefile.bat",
+    "make": "./Makefile.sh",
+    "backup": "./backup.sh",
+    "bot": "node ./fake/bot.js",
+    "dbm": "./node_modules/.bin/fpm-dbm -f ./meta -d ./sql -o"
+  },
+  "author": "FPM-TEAM",
+  "dependencies": {
+    "debug": "^4.1.1",
+    "excel-export": "^0.5.1",
+    "fpm-plugin-ffmpeg": "^1.1.3",
+    "fpm-plugin-mqtt-client": "^1.1.0",
+    "fpm-plugin-mysql": "^1.3.0",
+    "fpm-plugin-rbac-mysql": "^1.1.0",
+    "fpm-plugin-socketio": "^1.1.0",
+    "fpm-plugin-user-service": "^1.1.0",
+    "koa-send": "^5.0.0",
+    "koa2-cors": "^2.0.6",
+    "lodash": "^4.16.1",
+    "memory-cache": "^0.2.0",
+    "moment": "^2.24.0",
+    "node-schedule": "^1.3.2",
+    "yf-fpm-server": "^2.6.1"
+  },
+  "devDependencies": {
+    "fpmc-jssdk": "^1.0.8",
+    "fpm-dbm-cli": "^1.0.3",
+    "mocha": "^3.2.0",
+    "nodemon": "^1.11.0"
+  }
+}

@@ -1,0 +1,40 @@
+version: '3'
+services:
+  phpmyadmin:
+    image: "phpmyadmin/phpmyadmin"
+    ports:
+      - "88:80"
+    depends_on:
+      - "db"
+    networks: 
+      - dev-network
+    restart: always
+  db:
+    image: "mysql:5.6"
+    container_name: "fpm-mysql-server"
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/db_init.sql
+      - ./mysqldata/:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: "root"
+      TZ: "Asia/Shanghai"
+    ports:
+      - "3306:3306"
+    networks: 
+      - dev-network
+    restart: always
+
+  # scheduleserver:
+  #   image: "yfsoftcom/fpm-schedule-server:latest"
+  #   container_name: "fpm-schedule-server"
+  #   volumes:
+  #     - ./config.json:/app/config.json
+  #     - ./db.lock:/app/db.lock
+  #   ports:
+  #     - "9999:9994"
+  #   networks:
+  #     - dev-network
+  #   restart: always
+
+networks:
+  dev-network: 

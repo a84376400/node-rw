@@ -1,0 +1,13 @@
+/node_modules
+/.vscode
+*.log
+/views
+config.json
+/db.lock
+/mysqldata
+/logs
+/backup
+package-lock.json
+*.iml
+*.xml
+*.xlsx

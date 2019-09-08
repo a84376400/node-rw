@@ -1,0 +1,27 @@
+{
+    "server":
+    {
+        "hostname": "0.0.0.0",
+        "domain": "localhost",
+        "port": 9994
+    },
+    "mysql":
+    {
+        "host": "localhost",
+        "database": "ruiwei",
+        "username": "root",
+        "password": "root",
+        "showSql": true
+    },
+    "mqttserver":
+    {
+        "host": "114.220.74.133",
+        "port": 1883,
+        "username": "admin",
+        "password": "123123123"
+    },
+    "juheSms":
+    {
+        "appkey": "***todo****"
+    }
+}

@@ -1,0 +1,12 @@
+mysqldata/
+logs/
+config.json
+fake/
+images/
+*.md
+*.log
+db.lock
+backup/
+meta/
+node_modules/
+test/
